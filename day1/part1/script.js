@@ -42,7 +42,7 @@ const lineReader = readline.createInterface({
             numbers.push(9);
         }
     }
-    finalValue=numbers[0]+numbers[numbers.length-1];
+    finalValue += numbers[0]+numbers[numbers.length-1];
   });
   
   lineReader.on('close', () => {

@@ -12,7 +12,7 @@ const lineReader = readline.createInterface({
     for(i = 0; i< line.length-1; i++){
         numbers = [];
         if (!line[i].isNaN==false){
-            numbers.push(line[i]);
+            numbers.push(parseInt(line[i]));
         }
         if(line[i].toLocaleLowerCase=="o"&&line[i+1].toLocaleLowerCase=="n"&&line[i+2].toLocaleLowerCase=="e"){
             numbers.push(1);

@@ -41,12 +41,11 @@ const lineReader = readline.createInterface({
         if(line[i].toLocaleLowerCase=="n"&&line[i+1].toLocaleLowerCase=="i"&&line[i+2].toLocaleLowerCase=="n"&&line[i+3].toLocaleLowerCase=="e"){
             numbers.push(9);
         }
-        finalValue=numbers[0]+numbers[numbers.length-1];
     }
-        
+    finalValue=numbers[0]+numbers[numbers.length-1];
   });
   
   lineReader.on('close', () => {
-    
+    console.log(finalValue);
     console.log('File reading completed.');
   });

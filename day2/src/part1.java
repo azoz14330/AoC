@@ -14,9 +14,7 @@ public class part1 {
     for(String game : games){
         String[] singles = game.split(",");
         for(String color : singles){
-            // System.out.println(color.trim());
             String[] x = color.trim().split(" ");
-            // System.out.println(x[0]+" "+x[1]);
             if(x[1].contains("red")){
                 if(Integer.parseInt(x[0])>red){
                     return false;

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class part2 {
+public class part1 {
     public static Boolean processString(String line){
     int red = 12, green = 13, blue= 14;
     String[] split = line.split(":");
